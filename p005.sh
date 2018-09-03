@@ -1,6 +1,6 @@
 #!/bin/ksh
 
-# $Id: p005.sh,v 1.3 2018/09/03 15:37:59 hajime Exp $
+# $Id: p005.sh,v 1.4 2018/09/03 15:40:35 hajime Exp $
 
 # Project Euler #5
 # Hajime Edakawa <hajime.edakawa@gmail.com>
@@ -15,7 +15,6 @@ while (( 0 < i )); do
 	while (( 0 < n )); do
 		let n=$m%$n m=$n
 	done
-
 	let se[i]=$((se[i]*se[j]/m)) i-- j--
 done
 
