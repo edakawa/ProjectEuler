@@ -1,6 +1,6 @@
 #!/bin/ksh
 
-# $Id: p005.sh,v 1.2 2018/09/03 15:30:50 hajime Exp $
+# $Id: p005.sh,v 1.3 2018/09/03 15:37:59 hajime Exp $
 
 # Project Euler #5
 # Hajime Edakawa <hajime.edakawa@gmail.com>
@@ -9,7 +9,7 @@
 UPPER=20
 
 set -A se $(jot $UPPER)
-integer i=$(($UPPER-2)) j=$(($UPPER-1))
+integer i=$((UPPER-2)) j=$((UPPER-1))
 while (( 0 < i )); do
 	integer n=${se[$i]} m=${se[$j]}
 	while (( 0 < n )); do
