@@ -1,6 +1,6 @@
 #!/bin/ksh
 
-# $Id: p004.sh,v 1.3 2018/09/02 15:41:20 hajime Exp $
+# $Id: p004.sh,v 1.4 2018/09/03 15:34:57 hajime Exp $
 
 # Project Euler #4
 # Hajime Edakawa <hajime.edakawa@gmail.com>
@@ -9,14 +9,14 @@
 perl -nle 'local $|=1; print scalar reverse $_' |&
 
 integer i=1 j buf max=0
-while (( $i <= 999 )); do
+while (( i <= 999 )); do
 	let j=$i
-	while (( $j <= 999 )); do
+	while (( j <= 999 )); do
 		let buf=$i*$j
 		print -p $buf
 		read -p rev
 		if [[ $buf = $rev ]]; then
-			if (( $buf > $max )); then
+			if (( buf > max )); then
 				let max=$buf
 			fi
 		fi
