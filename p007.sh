@@ -1,12 +1,12 @@
 #!/bin/ksh
 
-# $Id: p007.sh,v 1.3 2018/09/05 01:53:34 hajime Exp $
+# $Id: p007.sh,v 1.4 2018/09/05 01:58:14 hajime Exp $
 
 # Project Euler #7
 # Hajime Edakawa <hajime.edakawa@gmail.com>
 # Public Domain
 
-UPPER=1000
+UPPER=10001
 set -A PRIMES 2 3
 
 bc |&
