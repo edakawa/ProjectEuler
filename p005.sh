@@ -1,6 +1,6 @@
 #!/bin/ksh
 
-# $Id: p005.sh,v 1.6 2018/09/06 12:28:46 hajime Exp $
+# $Id: p005.sh,v 1.7 2018/09/06 12:50:26 hajime Exp $
 
 # Project Euler #5
 # Hajime Edakawa <hajime.edakawa@gmail.com>
@@ -12,7 +12,7 @@ set -A se $(jot $UPPER)
 integer i=UPPER-2 j=UPPER-1
 while (( 0 < i )); do
 	integer n=se[i] m=se[j]
-	while (( 0 < n )); do
+	while (( 0 != n )); do
 		let n=m%n m=$n
 	done
 	let se[i]=se[i]*se[j]/m i-- j--
