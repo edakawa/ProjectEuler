@@ -1,6 +1,6 @@
 #!/bin/ksh
 
-# $Id: p007.sh,v 1.4 2018/09/05 01:58:14 hajime Exp $
+# $Id: p007.sh,v 1.5 2018/09/08 13:44:07 hajime Exp $
 
 # Project Euler #7
 # Hajime Edakawa <hajime.edakawa@gmail.com>
@@ -30,7 +30,7 @@ function is_prime {
 }
 
 integer found=2 n=5 ret
-while (( found < $UPPER )); do
+while (( found < UPPER )); do
 	is_prime $n
 	if [[ $? -eq 0 ]]; then
 		let found++
