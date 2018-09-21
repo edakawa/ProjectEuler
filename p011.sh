@@ -1,6 +1,6 @@
 #!/bin/ksh
 
-# $Id: p011.sh,v 1.2 2018/09/19 13:59:15 hajime Exp $
+# $Id: p011.sh,v 1.3 2018/09/21 02:31:42 hajime Exp $
 
 # Project Euler #11
 # Hajime Edakawa <hajime.edakawa@gmail.com>
@@ -32,7 +32,7 @@ integer r1 r2 r3 r4 a m=0
 ld() {
 	local _y=$2 _x=$3
 
-	if (( y > 19 || x > 19 || x < 0 )); then
+	if (( _y > 19 || _x > 19 || _x < 0 )); then
 		let r1=0 r2=0 r3=0 r4=0
 		return
 	fi
