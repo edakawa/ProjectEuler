@@ -1,6 +1,6 @@
 #!/bin/ksh
 
-# $Id: p025.sh,v 1.1 2018/10/01 17:55:17 hajime Exp $
+# $Id: p025.sh,v 1.2 2018/10/01 17:56:56 hajime Exp $
 
 # Project Euler #25
 # Hajime Edakawa <hajime.edakawa@gmail.com>
@@ -17,4 +17,4 @@ define fib(f1, f2, depth) {
 print -p "fib(1, 1, 1)"
 read -p solution
 
-echo solution
+echo $solution
